@@ -21,7 +21,7 @@ This project is currently in development. Users can add new expenses and see vis
 
 ## Installation and Setup Instructions
 
-#### Example:  
+#### Follow the steps:  
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
