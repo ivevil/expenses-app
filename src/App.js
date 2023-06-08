@@ -54,7 +54,7 @@ const DUMMY_EXPENSES = [
   },
   {
     id: 'e9',
-    title: 'Camer GoPro',
+    title: 'Camera GoPro',
     amount: 320,
     date: new Date(2023, 2, 11),
   },

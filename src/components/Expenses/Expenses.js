@@ -85,7 +85,7 @@ const DATA =
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState('0');
   const [filteredMonth, setFilteredMonth] = useState('0');
-  const [data, setData] = useState(DATA);
+  const [data] = useState(DATA);
 
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
@@ -106,10 +106,11 @@ const Expenses = (props) => {
     if (filteredMonth !== "0" && filteredYear === "0") {
       return month[expense.date.getMonth()] === filteredMonth;
     }
+    return null;
 
   });
 
-  let expensesContent = <p>No expenses found.</p>;
+  let expensesContent = <p className="empty-label">No expenses found.</p>;
 
   if (filteredExpenses.length > 0) {
     expensesContent = filteredExpenses.map((expense) => (
