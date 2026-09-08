@@ -1,29 +1,50 @@
 .new-expense {
-  background-color: #a892ee;
-  padding: 1rem;
-  margin: 2rem auto;
-  width: 50rem;
+  background: linear-gradient(135deg, #7f5af0, #4a3ca7);
+  padding: 1.5rem;
+  margin: 2rem auto 1rem;
+  width: 55rem;
   max-width: 95%;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 14px 28px rgba(53, 31, 107, 0.32);
+}
+
+.new-expense__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.new-expense__eyebrow {
+  margin: 0 0 0.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-size: 0.72rem;
+}
+
+.new-expense h2 {
+  margin: 0;
+  color: white;
+  font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
 .new-expense button {
   font: inherit;
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 0.9rem 1.5rem;
   border: 1px solid #40005d;
-  background-color: #40005d;
-  color: white;
+  background-color: #fff;
+  color: #2c1140;
   border-radius: 12px;
-  margin-right: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .new-expense button:hover,
 .new-expense button:active {
-  background-color: #510674;
-  border-color: #510674;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(31, 17, 55, 0.25);
 }
 
 .new-expense button.alternative {

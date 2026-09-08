@@ -1,42 +1,52 @@
-## Expenses App
+# Expenses App
 
-#### Description:
+A small React application for tracking personal expenses, filtering them by year, and visualizing spending through a chart.
 
-Expenses App
+## Features
 
-An application used to create and filter data - expenses based on year, built with React, JavaScript, and CSS.
+- Add new expense entries
+- Filter expenses by year
+- View expenses grouped by selected year
+- Visual summary of spending trends
+- Responsive layout using React and CSS
 
 ## Project Status
-in progress
 
-#### Example:
+Active development
 
-This project is currently in development. Users can add new expenses and see visual data representation. More functionalities coming soon.
+## Screenshot
 
-## Project Screen Shot(s)
+![Expenses App](https://raw.githubusercontent.com/ivevil/expenses-app/master/screenshot.png)
 
-#### Main:   
+## Prerequisites
 
-![ScreenShot](https://raw.github.com/ivevil/expenses-app/master/screenshot.png)
+- Node.js 18+
+- npm
 
-## Installation and Setup Instructions
+## Installation
 
-#### Follow the steps:  
+```bash
+npm install
+```
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+## Run the app locally
 
-Installation:
+```bash
+npm run dev
+```
 
-`npm install`  
+Then open:
 
-To Run Test Suite:  
+```text
+http://localhost:5173/
+```
 
-`npm test`  
+## Production build
 
-To Start Server:
+```bash
+npm run build
+```
 
-`npm start`  
+## Notes
 
-To Visit App:
-
-`localhost:3000/`  
+This project has been migrated from Create React App to Vite to remove the legacy CRA toolchain and improve the modern development workflow.

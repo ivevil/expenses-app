@@ -10,6 +10,14 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #2d2d2d 0%, #171717 100%);
+  color: #f5f5f5;
+}
+
+button,
+input,
+select {
+  font: inherit;
 }
 

@@ -1,11 +1,82 @@
 .expenses {
-  padding: 1rem;
-  background-color: rgb(31, 31, 31);
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #1f1f1f, #2b2b2b);
   margin: 2rem auto;
-  width: 50rem;
+  width: 55rem;
   max-width: 95%;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.expenses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.expenses-header__eyebrow {
+  margin: 0 0 0.25rem;
+  color: #d3b9ff;
+  font-size: 0.7rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.expenses-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.expenses-header__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.expenses-header__meta span {
+  font-size: 0.8rem;
+  color: #d0d0d0;
+}
+
+.expenses-header__meta strong {
+  font-size: 1.3rem;
+  color: #8ef0c6;
+}
+
+.expenses-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .empty-label {
-  color: white;
+  color: #f4f4f4;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  line-height: 1.5;
+}
+
+.reset-button {
+  background: transparent;
+  color: #f4d5ff;
+  border: 1px solid rgba(244, 213, 255, 0.6);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-button:hover {
+  background: rgba(244, 213, 255, 0.08);
 }
